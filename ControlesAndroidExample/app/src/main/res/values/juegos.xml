@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="juegosPS5">
+        <item>Lolsito</item>
+        <item>DOOM</item>
+        <item>DOTA</item>
+        <item>MAINCRA</item>
+        <item>Carlos Duty</item>
+    </string-array>
+</resources>

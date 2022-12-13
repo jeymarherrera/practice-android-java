@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/utp"
+        android:layout_gravity="center"
+        android:contentDescription="lab5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universidad Tecnologica de Panama"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/user"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Contrasena"
+        android:inputType="textWebPassword"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/candado"
+        android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Login"
+            android:text="Login"/>
+
+
+</LinearLayout>

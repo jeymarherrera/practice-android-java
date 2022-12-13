@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateUserActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/txtNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca su usuario" />
+
+    <EditText
+        android:id="@+id/txtNewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca su correo" />
+
+    <EditText
+        android:id="@+id/txtNewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca su cedula" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:onClick="InsertarUsuario"/>
+
+</LinearLayout>

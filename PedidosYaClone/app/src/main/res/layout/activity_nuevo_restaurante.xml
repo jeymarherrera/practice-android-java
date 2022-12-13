@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textSize="32dp"/>
+
+
+    <EditText
+        android:id="@+id/txtLugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lugar"
+        android:textSize="32dp"/>
+
+    <TimePicker
+        android:id="@+id/tpTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"/>
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Precio"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/txtRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Rating"
+        android:textSize="32dp"/>
+
+    <CheckBox
+        android:id="@+id/chkPagoOnline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Paga Online?"
+        android:textSize="32dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Datos"
+        android:onClick="GuardarDatos"/>
+
+</LinearLayout>

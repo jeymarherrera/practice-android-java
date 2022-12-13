@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creaciondeusuario"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtUserRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="38dp"
+        android:textAlignment="center"
+        android:hint="Registro"/>
+
+    <EditText
+        android:id="@+id/txtUserR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca su usuario"/>
+
+    <EditText
+        android:id="@+id/txtPassR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="****su contraseña ****"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        />
+
+    <EditText
+        android:id="@+id/txtCedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cedula"
+       />
+
+
+
+    <Button
+        android:onClick="InsertarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Datos"/>
+
+
+</LinearLayout>

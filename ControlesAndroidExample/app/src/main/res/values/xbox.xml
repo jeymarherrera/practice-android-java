@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="juegosXbox">
+        <item>HALO</item>
+        <item>Gears of War</item>
+        <item>Horizon</item>
+        <item>CupHead</item>
+        <item>Banjo Kazooie</item>
+    </string-array>
+</resources>

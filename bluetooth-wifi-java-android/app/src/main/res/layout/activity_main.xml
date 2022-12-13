@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNIVERSIDAD TENOLÓGICA DE PANAMÁ\n
+FACULTAD DE INGENIERÍA DE SISTEMAS COMPUTACIONALES\n
+LICENCIATURA EN DESARROLLO DE SOFTWARE\n\n
+INVESTIGACIÓN #2\n\n
+FACILITADOR: Prof. Juan Zamora"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INTEGRANTES:\n
+Adrian Albaez\n
+Dayana Cheu\n
+Lynn Chiang\n
+Guillermo Gordon\n
+Daniel Guerrero\n
+Jeymar Herrera\n
+Luis Lopez"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/btnWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi"
+        android:layout_margin="15dp"
+        android:onClick="goWifi"/>
+
+    <Button
+        android:id="@+id/btnBluet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluethoot"
+        android:layout_margin="15dp"
+        android:onClick="goBluet"/>
+
+</LinearLayout>

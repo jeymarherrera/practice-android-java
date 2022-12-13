@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guardar"
+     android:orientation="vertical"
+    android:background="#5dc460">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#500075"
+                android:drawablePadding="10dp"
+                android:hint="Guardar notas "
+                android:inputType="text"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+
+
+                android:textSize="35dp" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" "
+                android:textSize="32dp"
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Matematica 1"
+                android:textSize="32dp"
+
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+
+                android:inputType="text"
+
+
+                />
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/mate"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+
+
+
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="Geografia"
+                android:textSize="32dp"
+
+
+                android:padding="10dp"
+
+
+                android:textColorHint="@color/black"
+
+                android:inputType="text"
+
+                />
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/geografia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:hint="Ciencias"
+
+                android:textSize="32dp"
+
+                android:padding="10dp"
+
+                android:textColorHint="@color/black"
+
+                android:inputType="text"
+
+                />
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/ciencias"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Calculo"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/calculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tecnologia"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/tecnoloia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ingles"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/ingles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Religion"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Fisica"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/fisica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Filosofia"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/filosofia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Matematica2"
+                android:textSize="32dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:id="@+id/matematica2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="COLOCAR NOTA "
+                />
+            <Button
+                android:onClick="guardarnota"
+                android:id="@+id/btngua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar notas"
+
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

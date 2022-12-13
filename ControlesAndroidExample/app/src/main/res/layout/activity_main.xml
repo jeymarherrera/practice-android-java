@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lado Izquierdo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lado Derecho"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <!--EJEMPLO DE USO DE RELATIVE LAYOUT-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aqui va tu nombre"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ej. Jeymar"
+            android:layout_toRightOf="@id/lblNombre"/>
+        <TextView
+            android:id="@+id/lblApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aqui va tu Apellido"
+            android:textSize="20dp"
+            android:layout_below="@id/lblNombre"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/txtApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ej. Herrera"
+            android:layout_toRightOf="@id/lblApellido"
+            android:layout_below="@id/txtNombre"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rgbTipoJuegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbtSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SWITCH"/>
+        <RadioButton
+            android:id="@+id/rbtPS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS5"/>
+        <RadioButton
+            android:id="@+id/rbtXbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XBOX"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spnJuegos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validar Boton"
+            android:onClick="ValidarButton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargar Spinner"
+            android:onClick="CargarSpinner"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chkDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Dialog?"/>
+
+    <Button
+        android:id="@+id/btnConcatenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concatenar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="Concatenar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Resultado:"/>
+
+    <TextView
+        android:id="@+id/lblRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rbgLogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbtLogoUTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logo UTP"/>
+        <RadioButton
+            android:id="@+id/rbtLogoFisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logo FISC"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="0.4"
+        android:scaleX="0.4"
+        android:src="@drawable/utp"/>
+</LinearLayout>

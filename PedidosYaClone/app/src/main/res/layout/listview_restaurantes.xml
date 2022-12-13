@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ico"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/mc" />
+
+    <LinearLayout
+        android:id="@+id/textos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ico"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtSlash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/txtNombre"
+                android:text="/"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion"
+                android:id="@+id/txtDireccion"
+                android:layout_toRightOf="@+id/txtSlash"
+                android:textSize="18dp"
+                />
+
+            <ImageView
+                android:id="@+id/imgStar"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/txtRating"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.4"
+                android:id="@+id/txtRating"
+                android:layout_alignParentRight="true"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pago_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No se aceptan pagos online"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo"
+                android:id="@+id/txtTiempo"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:id="@+id/txtPunto"
+                android:layout_toRightOf="@+id/txtTiempo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Costo"
+                android:id="@+id/txtCosto"
+                android:layout_toRightOf="@+id/txtPunto"
+                android:textSize="18dp"
+                />
+
+            <ImageView
+                android:id="@+id/imgHeart"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/heart" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

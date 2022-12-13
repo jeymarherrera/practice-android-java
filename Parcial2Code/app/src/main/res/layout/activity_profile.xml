@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/atras"
+        />
+
+    <EditText
+        android:id="@+id/NombreUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-116dp"
+        android:gravity="center"
+
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Universidad Tecnologica"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@+id/txt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="de Panama"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_below="@+id/txt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Facultad de Sistema"
+        android:textSize="50px" />
+
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="Seleccione su Perfil"
+        android:textSize="50px" />
+
+    <RadioGroup
+        android:id="@+id/sitios"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txt4"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rec"
+        android:layout_centerHorizontal="true">
+
+
+        <RadioButton
+            android:id="@+id/sitioestudiante"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:text="Sitio Estudiante" />
+
+        <RadioButton
+            android:id="@+id/sitioestudiantesiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:text="Sitio Estudiante SIU" />
+
+        <RadioButton
+            android:id="@+id/sitioprofesor"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sitioestudiantesiu"
+            android:checked="false"
+            android:text="Sitio Profesor" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="18dp"
+        android:onClick="SitioBusc"
+        android:text="Entrar" />
+
+</RelativeLayout>

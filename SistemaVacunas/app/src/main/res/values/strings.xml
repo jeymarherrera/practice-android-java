@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SuperCovid</string>
+    <integer name="db_version">1</integer>
+</resources>

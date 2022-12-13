@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroActivity">
+
+    <EditText
+        android:id="@+id/txtUserR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca su usuario"/>
+
+    <EditText
+        android:id="@+id/txtPassR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="****************"
+        android:inputType="textPassword"/>
+
+    <RadioGroup
+        android:id="@+id/rbgLoginR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtSPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shared Preferences"/>
+        <RadioButton
+            android:id="@+id/rbtAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archivos"/>
+
+    </RadioGroup>
+    <Button
+        android:onClick="InsertarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Datos"/>
+
+</LinearLayout>

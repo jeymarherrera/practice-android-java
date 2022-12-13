@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LS31BD</string>
+    <integer name="DBVersion">1</integer>
+    <string name="DBName">Cinepolis</string>
+</resources>

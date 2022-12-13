@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroVacunaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:text="Ingrese la dosis"/>
+
+
+    <Spinner
+        android:id="@+id/spnVacuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imgVacuna"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/vaccine"/>
+
+
+    <DatePicker
+        android:id="@+id/dpFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spnDosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/chkChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiene chip?"
+            android:textSize="32dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spnEstudiante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Actualizar Chip"
+        android:onClick="Vacunar"/>
+    </LinearLayout>
+</ScrollView>

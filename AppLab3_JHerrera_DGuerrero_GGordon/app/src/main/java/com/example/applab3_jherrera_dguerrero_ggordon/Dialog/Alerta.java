@@ -1,0 +1,28 @@
+package com.example.applab3_jherrera_dguerrero_ggordon.Dialog;
+
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+
+import androidx.fragment.app.DialogFragment;
+
+public class Alerta extends DialogFragment {
+    private String resultado;
+
+    public Alerta(String res){
+        this.resultado = res;
+    }
+
+    public Dialog onCreateDialog(Bundle savedIntanceState){
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+        builder.setTitle("Resultado de la Operacion").setMessage("El resultado es: " + resultado).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+               dialog.cancel();
+            }
+        });
+        return builder.create();
+    }
+}

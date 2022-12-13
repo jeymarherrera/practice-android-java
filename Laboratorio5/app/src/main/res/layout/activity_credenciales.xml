@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Credenciales"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textSize="38dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textSize="31dp" />
+
+    <TextView
+        android:id="@+id/txtUserrio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cedula"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/txtcedula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grupo"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/txtgrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tema"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/txttema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="------"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+</LinearLayout>

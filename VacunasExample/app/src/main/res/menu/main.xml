@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mitemEstudiante"
+        android:title="Agregar Estudiante"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/est"/>
+
+    <item android:id="@+id/mitemDosis"
+        android:title="Agregar Dosis"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/vaccine"/>
+</menu>

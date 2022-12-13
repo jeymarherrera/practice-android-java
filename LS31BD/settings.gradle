@@ -1,0 +1,2 @@
+rootProject.name='LS31BD'
+include ':app'

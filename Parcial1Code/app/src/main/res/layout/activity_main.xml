@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Que parcial mas dificil"
+            android:textAlignment="center"
+            android:textSize="50px"/>
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:onClick="browser"
+            android:text="Google"/>
+
+        <Button
+            android:id="@+id/btnYoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/btnGoogle"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="youtube"
+            android:text="Youtube"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/btnYoutube"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:onClick="email"
+            android:text="Email"
+            android:textSize="24sp"/>
+
+        <ImageButton
+            android:id="@+id/btnWifi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btnYoutube"
+            android:layout_alignLeft="@+id/btnGoogle"
+            android:onClick="wifi"
+            android:scaleType="fitStart"
+            android:src="@drawable/utp" />
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_centerHorizontal="true"
+            android:onClick="call"
+            android:scaleType="fitStart"
+            android:src="@drawable/utp"/>
+
+        <ImageButton
+            android:id="@+id/btnContact"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_toRightOf="@+id/btnCall"
+            android:onClick="contact"
+            android:scaleType="fitStart"
+            android:src="@drawable/utp"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
